@@ -1,0 +1,113 @@
+body {
+  background-color: rgb(233, 232, 232);
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.header-container {
+    
+  padding: 0.5rem;
+  background-color: #fff;
+  border: 1px solid rgb(160, 160, 160);
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  background-color: #dfdfdf;
+  height: 100%;
+  border: 1px solid rgb(160, 160, 160);
+}
+.sidebar-title {
+  padding: 1rem;
+  font-size: 2rem;
+  border: 1px solid rgb(160, 160, 160);
+  background-color: #fff;
+}
+.sidebar-content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.sidebar-btn {
+  padding: 0.2rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+}
+.form-container {
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.form {
+  width: 50vw;
+  background-color: #fff;
+  margin: 0 auto;
+  min-height: 50vw;
+  border: 1px solid rgb(160, 160, 160);
+  border-radius: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 1rem;
+}
+
+#form-items li {
+  cursor: all-scroll;
+  margin: 0.5ren auto;
+}
+
+#form-items li::before {
+  content: "";
+}
+
+.form-item {
+  cursor: pointer;
+  width: 100%;
+  margin: 1rem 0;
+}
+.form-item-label-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+.form-item-element {
+  width: 100%;
+  margin: 1rem 0;
+}
+button {
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+button#save:hover {
+  background-color: #45a049;
+}
+
+button#save:active {
+  background-color: #3e8e41;
+}
